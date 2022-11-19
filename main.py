@@ -103,7 +103,7 @@ if __name__ == "__main__":
             speak("OK!")
 
         elif "weather" in query:
-            API_KEY = "45633e8d84e9462f12f960d1a95205fb"
+            API_KEY = ""
             BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
             city = "kanpur"
@@ -136,12 +136,6 @@ if __name__ == "__main__":
 
         elif "name" in query:
             speak("My name is Alita! Programmed by Ayush Siloiya")
-
-        elif "best friend" in query:
-            speak("Your best friend is Aayushi Saini")
-
-        elif "what qualities she has" in query:
-            speak("She is very kind and cute. She took care of your's and understands you better.")
 
         elif 'motivation' in query:
             speak("The man who does not read books has no advantage over the one who cannot read them. \
