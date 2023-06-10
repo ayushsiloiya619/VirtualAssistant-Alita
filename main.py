@@ -7,6 +7,8 @@ import requests
 import pywhatkit
 import pyjokes
 
+# Set up OpenAI API key
+openai.api_key = "YOUR_OPENAI_API_KEY"
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
@@ -140,3 +142,17 @@ if __name__ == "__main__":
         elif 'motivation' in query:
             speak("The man who does not read books has no advantage over the one who cannot read them. \
                 The beautiful thing about learning is that no one can take it away from you.")
+        
+        elif 'help' in query:
+                response = openai.Completion.create(
+                engine="davinci-codex",
+                prompt=prompt,
+                temperature=0.5,
+                max_tokens=200,
+                top_p=1.0,
+                frequency_penalty=0.0,
+                presence_penalty=0.0
+            )
+            brief = response.choices[0].text.strip()
+            speak(brief)
+            print(brief)
