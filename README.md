@@ -1,4 +1,4 @@
-<h1>Personal Assistant README</h1>
+<h1>Personal Assistant</h1>
 
 <p>This Python script creates a personal assistant program using the <code>pyttsx3</code>, <code>speech_recognition</code>, <code>datetime</code>, <code>wikipedia</code>, <code>webbrowser</code>, <code>requests</code>, <code>pywhatkit</code>, and <code>pyjokes</code> libraries. The program allows the user to interact with the assistant through voice commands and perform various tasks.</p>
 
@@ -100,8 +100,17 @@ engine.setProperty('voice', voices[1].id)
   <li>and more...</li>
 </ul>
 
-<p>8. Run the script and start interacting with your personal assistant!</p>
-
+<p>8. Run the script and start interacting with your personal assistant!</p><br>
+<b><p>Latest Release</p></b>
+<p>ChatGPT: </P>
+                engine="davinci-codex",
+                prompt=prompt,
+                temperature=0.5,
+                max_tokens=200,
+                top_p=1.0,
+                frequency_penalty=0.0,
+                presence_penalty=0.0
+</p><br>
 <h2>Note</h2>
 <ul>
   <li>Make sure you have an active internet connection for tasks such as searching on Wikipedia, playing songs on YouTube, and getting weather information.</li>
